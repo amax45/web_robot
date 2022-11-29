@@ -8,11 +8,23 @@
 		<meta name="description" content="Projekt do predmetu ICT" />
 		<meta name="keywords" content="web,robot,detekce" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <script>
+         // Initialize an agent at application startup.
+  const botdPromise = import('https://openfpcdn.io/botd/v1').then((Botd) =>
+    Botd.load()
+  );
+  // Get the bot detection result when you need it.
+  botdPromise
+    .then((botd) => botd.detect())
+    .then((result) => console.log(result))
+    .catch((error) => console.error(error));
+</script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+                  
 
 				<!-- Intro -->
 					<section class="intro">
@@ -88,6 +100,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            
 
 	</body>
 </html>

@@ -21,7 +21,8 @@
                     $rs = mysqli_query($spojeni, $insert);
 
 if($rs)
-{
+{   
+    
 	echo "Záznam vložen úspěšně.";
 }    
                         }
