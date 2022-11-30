@@ -1,6 +1,6 @@
 <?php
-                       $spojeni = mysqli_connect("127.0.0.1", "root", "", "web");
-                    //$spojeni = mysqli_connect("sql.endora.cz:3310", "amax456","Neumimto123","pisweb");
+                       //$spojeni = mysqli_connect("127.0.0.1", "root", "", "web");
+                    $spojeni = mysqli_connect("sql.endora.cz:3310", "amax456","Neumimto123","pisweb");
 					       if (!$spojeni) die("Nepodařilo se připojit k DB serveru: " . mysqli_connect_error());
                         
                         
