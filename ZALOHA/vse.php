@@ -47,7 +47,7 @@
 				<!-- Section -->
 					<section id="first">
 						<header>
-							<h2>Alex na VUT</h2>
+							<h2>Studenti na VUT</h2>
 						</header>
 						<div class="content">
    	
